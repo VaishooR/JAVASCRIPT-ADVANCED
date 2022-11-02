@@ -1,0 +1,18 @@
+Alone, the 'this' keyword refers to the window object.
+
+Ex:
+console.log(this)
+
+OUTPUT:
+[object Window] {
+  addEventListener: function addEventListener() { [native code] },
+  alert: function alert() { [native code] },
+  atob: function atob() { [native code] },
+  blur: function blur() { [native code] },
+...
+...
+...
+
+
+Window object is basically the entire browser.
+The information of this entire tab is contained within this window object.
