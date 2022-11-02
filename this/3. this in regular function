@@ -1,0 +1,18 @@
+In a regular function, the 'this' keyword refers to the window object.
+
+Ex:
+function myFunc(){
+  console.log(this);
+}
+myFunc();
+
+
+OUTPUT:
+[object Window] {
+  addEventListener: function addEventListener() { [native code] },
+  alert: function alert() { [native code] },
+  atob: function atob() { [native code] },
+  blur: function blur() { [native code] },
+...
+...
+...
