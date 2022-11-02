@@ -1,0 +1,18 @@
+In a method, the 'this' keyword refers to the owner object inside which the this keyword is present.
+
+const person={
+  fname:'Vaishoo',
+  lname:'Baby Baby',
+  fullname:function(){
+    return this.fname+' '+this.lname;
+  }
+}
+console.log(person.fname);
+console.log(person.lname);
+console.log(person.fullname());
+
+
+OUTPUT:
+"Vaishoo"
+"Baby Baby"
+"Vaishoo Baby Baby"
