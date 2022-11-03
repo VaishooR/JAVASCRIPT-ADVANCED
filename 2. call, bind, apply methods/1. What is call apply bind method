@@ -1,3 +1,7 @@
 When we have a method in one object, 
 and that method has to be used by another object, 
 then we use call(), apply(), bind() methods.
+
+
+In call(), apply(), bind() methods, 
+the 'this' keyword doesnot refer to the same object but to the new object, or the other object.
