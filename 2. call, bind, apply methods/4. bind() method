@@ -1,0 +1,25 @@
+Ex:
+
+const person={
+  fullname:function(city,country){
+    return this.fname+'-'+this.lname+','+city+','+country
+  }
+}
+
+const person1={
+  fname:"John",
+  lname:"Doe"
+}
+
+const bound=person.fullname.bind(person1);
+console.log(bound('Chennai','India'));
+console.log(bound('Oslo','Norway'));
+console.log(bound('Austin','USA'));
+
+
+
+Explanation:
+
+call() and bind() methods are used right away once we type it but bind() is used for future use.
+i.e when we want to pass different parameters everytime, we use bind() method.
+which means in call and apply only one set of parameters can be passed but in bind we can pass many sets of parameters.
