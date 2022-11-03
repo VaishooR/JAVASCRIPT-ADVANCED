@@ -1,0 +1,3 @@
+When we have a method in one object, 
+and that method has to be used by another object, 
+then we use call(), apply(), bind() methods.
