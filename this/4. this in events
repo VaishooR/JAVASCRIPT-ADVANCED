@@ -1,0 +1,5 @@
+ In Events, this keyword refers to the element that receives the event.
+ For example, here the element is button, so the 'this' keyword refers to the button.
+ 
+ Ex:
+ <button onclick=" this.style.color='red' "> Change Color </button>
