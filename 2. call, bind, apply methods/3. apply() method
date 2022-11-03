@@ -1,0 +1,28 @@
+Ex:
+
+const person={
+  fullname:function(city,country){
+    return this.fname+'-'+this.lname+','+city+','+country
+  }
+}
+
+const person1={
+  fname:"John",
+  lname:"Doe"
+}
+
+console.log(person.fullname.call(person1, ['Chennai','India'] ))
+
+
+
+
+
+OUTPUT:
+"John-Doe,Chennai,India"
+
+
+
+
+Explanation:
+The apply() method is just like the call() method. 
+But the arguments are passed as an array.
