@@ -1,0 +1,26 @@
+Ex:
+
+const person={
+  fullname:function(city,country){
+    return this.fname+'-'+this.lname+','+city+','+country
+  }
+}
+
+const person1={
+  fname:"John",
+  lname:"Doe"
+}
+
+console.log(person.fullname.call(person1,'Chennai','India'))
+
+
+
+
+
+Explanation:
+
+Here person and person1 are two objects.
+Now person1 object wants to access 'fullname' method from person object.
+To access a method from another object, we use the call() method.
+We can add or call only one object at a time.
+So when call() method is used, this.fname refers to the object containing fname and lname. 
