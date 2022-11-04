@@ -1,0 +1,35 @@
+REGULAR FUNCTION:
+The regular function has a binding of this keyword.
+
+const person={
+  fname:'John',
+  lname:'Doe',
+  fullname:function(){
+    return this.fname+' '+this.lname
+  }
+}
+console.log(person.fullname())
+
+OUTPUT:
+"John Doe"
+
+
+
+
+
+
+
+ARROW FUNCTION:
+The Arrow function doesnot has a binding of this keyword.
+
+const person={
+  fname:'John',
+  lname:'Doe',
+  fullname:()=>{
+    return this.fname+' '+this.lname
+  }
+}
+console.log(person.fullname())
+
+OUTPUT:
+"undefined undefined"
