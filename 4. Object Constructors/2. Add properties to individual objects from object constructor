@@ -1,0 +1,39 @@
+Using object constructor, multiple objects are created.
+But properties can not be added to the object constructor directly. Properties can be added only to the individual objects seperatley.
+So adding a property to one object, doesnot affect the other objects created using object constructor.
+The property gets added to only one object that we have mentioned.
+
+
+Ex:
+
+function Person(first,last,age,eye){
+  this.fname=first,
+  this.lname=last,
+  this.myAge=age,
+  this.eyecolor=eye
+}
+const myFather=new Person('John','Doe',50,'blue');
+const myMother=new Person('Sally','Rally',44,'green');
+console.log(myMother);
+console.log(myFather);
+
+myFather.nationality='America';         <-------------- nationality property is being added only to the myFather object.
+console.log(myFather);
+console.log(myMother);
+
+
+Output:
+
+[object Object] {
+  eyecolor: "blue",
+  fname: "John",
+  lname: "Doe",
+  myAge: 50,
+  nationality: "America"                 <-------------- nationality property has been added only to the myFather object. 
+}
+[object Object] {
+  eyecolor: "green",
+  fname: "Sally",
+  lname: "Rally",
+  myAge: 44                              <-------------- Not to the myMother object.
+}
