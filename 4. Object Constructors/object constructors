@@ -1,0 +1,43 @@
+Object constructors are functions used when we want to craete many objects of same type.
+Object constructors starts with capital letter.
+We use 'new' keyword with the name of the object constructor and then we pass the values whatever the object constructor takes in as its parameters to create objects.
+
+
+Ex:
+
+function Person(first,last,age,eye){
+  this.fname=first,
+  this.lname=last,
+  this.age=age,
+  this.eyecolor=eye,
+  this.fullname=function(){
+    return this.fname+' '+this.lname;
+  };
+}
+const myFather=new Person('John','Doe',50,'blue');
+const myMother=new Person('Sally','Rally',45,'green');
+console.log(myFather);
+console.log(myMother);
+
+
+Output:
+
+[object Object] {
+  age: 50,
+  eyecolor: "blue",
+  fname: "John",
+  fullname: function(){
+    return this.fname+' '+this.lname;
+  },
+  lname: "Doe"
+}
+
+[object Object] {
+  age: 45,
+  eyecolor: "green",
+  fname: "Sally",
+  fullname: function(){
+    return this.fname+' '+this.lname;
+  },
+  lname: "Rally"
+}
