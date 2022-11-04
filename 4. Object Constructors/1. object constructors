@@ -41,3 +41,6 @@ Output:
   },
   lname: "Rally"
 }
+
+
+So two objects are created with the same set of properties but with different values.
